@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Navigation from '../components/Navigation';
 
 const Aboutus = () => {
     return (
         <div>
-            About us
+            <Navigation />
+            <h1>Accueil</h1>
         </div>
     )
 }

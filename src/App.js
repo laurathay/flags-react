@@ -10,6 +10,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<Aboutus />} />
+        {/* si rien ne marche */}
+        <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
