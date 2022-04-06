@@ -5,7 +5,7 @@ const Aboutus = () => {
     return (
         <div>
             <Navigation />
-            <h1>Accueil</h1>
+            <h1>A propos</h1>
         </div>
     )
 }

@@ -6,10 +6,10 @@ const Navigation = () => {
         <div>
             <div className="navigation">
                 <ul>
-                    <NavLink to="/">
+                    <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
                         <li> accueil </li>
                     </NavLink>
-                    <NavLink to="/about">
+                    <NavLink to="/aboutus" className={(nav) => (nav.isActive ? "nav-active" : "")}>
                         <li> à propos </li>
                     </NavLink>
                 </ul>
