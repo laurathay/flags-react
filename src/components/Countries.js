@@ -1,8 +1,16 @@
 import axios from "axios";
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Countries = () => {
 
+    const [data, setData] = useState([]);
+    // Le useEffet se joue lorsque le composant est monté
+
+    useEffect(() => {
+        axios
+            .get("https://restcountries.com/v3.1/all")
+            .then((res) => setData(res.data));
+    }, []);
 
     return (
         <div className="countries">
