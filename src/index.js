@@ -1,10 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import createRoot from 'react-dom';
 import App from './App';
 import "./styles/pages/index.scss";
 
 
-ReactDOM.render(
+createRoot.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
